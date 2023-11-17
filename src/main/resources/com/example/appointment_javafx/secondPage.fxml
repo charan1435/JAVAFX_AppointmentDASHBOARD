@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appointment_javafx.SecondPageController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="599.0">
+         <children>
+            <Label layoutX="40.0" layoutY="14.0" prefHeight="33.0" prefWidth="418.0" text="View Active Appointments" underline="true">
+               <font>
+                  <Font name="Bernard MT Condensed" size="24.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect></Label>
+            <CheckBox fx:id="dateSearch" layoutX="14.0" layoutY="63.0" mnemonicParsing="false" text="Search By Date" />
+            <CheckBox fx:id="nameSearch" layoutX="130.0" layoutY="63.0" mnemonicParsing="false" text="Search By Name" />
+            <CheckBox fx:id="typeSearch" layoutX="248.0" layoutY="63.0" mnemonicParsing="false" text="Search By Type" />
+            <CheckBox fx:id="numberSearch" layoutX="361.0" layoutY="63.0" mnemonicParsing="false" text="Search By Number" />
+            <TextField fx:id="searchItem" layoutX="129.0" layoutY="88.0" prefHeight="26.0" prefWidth="463.0" text="Click the Appropriate CheckBox Filter, Enter Keyword here and click  search Button..." />
+            <Button layoutX="474.0" layoutY="121.0" mnemonicParsing="false" onAction="#searchByFilter" prefHeight="26.0" prefWidth="99.0" text="Search" />
+            <CheckBox fx:id="timeSearch" layoutX="497.0" layoutY="63.0" mnemonicParsing="false" text="Seach By Time" />
+            <ListView fx:id="myListView" layoutX="6.0" layoutY="160.0" prefHeight="221.0" prefWidth="580.0" />
+            <Button layoutX="14.0" layoutY="121.0" mnemonicParsing="false" onAction="#viewAllBtn" prefHeight="26.0" prefWidth="114.0" text="View All" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

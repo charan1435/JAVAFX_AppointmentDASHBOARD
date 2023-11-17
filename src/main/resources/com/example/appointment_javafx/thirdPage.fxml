@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appointment_javafx.ThirdPageController">
+   <content>
+      <AnchorPane prefHeight="401.0" prefWidth="599.0">
+         <children>
+            <VBox layoutX="121.0" prefHeight="328.0" prefWidth="363.0">
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="52.0" prefWidth="309.0" text="Schedule Appointment Below !" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font></Label>
+                  <Label contentDisplay="CENTER" prefHeight="18.0" prefWidth="79.0" text="NAME:" textAlignment="CENTER" translateX="145.0" underline="true" />
+                  <TextField fx:id="abc" />
+                  <Label contentDisplay="CENTER" prefHeight="18.0" prefWidth="101.0" text="Contact Number:" textAlignment="CENTER" translateX="130.0" underline="true" wrapText="true" />
+                  <TextField fx:id="contactNo" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="71.0" text="DATE:" textAlignment="CENTER" translateX="130.0" underline="true" />
+                  <DatePicker fx:id="dateLabel" prefHeight="26.0" prefWidth="364.0" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="84.0" text="TYPE:" textAlignment="CENTER" translateX="120.0" underline="true" wrapText="true" />
+                  <ChoiceBox fx:id="choiceEnt" prefHeight="26.0" prefWidth="369.0" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="50.0" text="EMAIL:" textAlignment="CENTER" translateX="140.0" underline="true" wrapText="true" />
+                  <TextField fx:id="emailInput" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="46.0" text="TIME:" textAlignment="CENTER" translateX="140.0" underline="true" wrapText="true" />
+                  <TextField fx:id="timeInput" />
+               </children>
+            </VBox>
+            <Button layoutX="500.0" layoutY="351.0" mnemonicParsing="false" onAction="#onConfirmClick" text="Confirm" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

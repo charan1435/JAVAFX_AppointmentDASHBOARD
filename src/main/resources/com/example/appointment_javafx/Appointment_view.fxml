@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" fillWidth="false" prefHeight="489.0" prefWidth="444.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appointment_javafx.AppointmentController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label contentDisplay="CENTER" prefHeight="18.0" prefWidth="154.0" text="Welcome to Dashboard!.." textAlignment="CENTER" wrapText="true" VBox.vgrow="NEVER">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+      <effect>
+         <Glow level="0.57" />
+      </effect>
+   </Label>
+   <GridPane prefHeight="69.0" prefWidth="320.0" VBox.vgrow="NEVER">
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+         <Button mnemonicParsing="false" onAction="#onHelloButtonClick" prefHeight="26.0" prefWidth="211.0" text="View" />
+         <Button mnemonicParsing="false" onAction="#onUpdateClick" prefHeight="26.0" prefWidth="211.0" text="Reschedule" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.vgrow="NEVER" />
+         <Button mnemonicParsing="false" onAction="#onScheduleClick" prefHeight="26.0" prefWidth="214.0" text="Schedule" GridPane.columnIndex="1" />
+         <Button mnemonicParsing="false" onAction="#onCancelClick" prefHeight="26.0" prefWidth="211.0" text="Cancel" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      </children>
+   </GridPane>
+</VBox>
