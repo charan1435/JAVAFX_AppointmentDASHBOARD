@@ -4,6 +4,9 @@ package com.example.appointment_javafx;
  * ID:20210655
  * */
 
+/**
+ * DataBase should be seperated  **/
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
